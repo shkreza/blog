@@ -37,16 +37,12 @@ repositories `:)`.
 * There is no native support for dynamic pages (Jekyll is inherently static).
 * It is hard to enable user comments -- something that can be handy (albeit
         there are apparently ways to solve this, e.g., see
-        [here](http://savaslabs.com/2016/04/20/squabble-comments.html), and
-        [Medium](http://www.medium.com) might be another alternative).
+        [here](http://savaslabs.com/2016/04/20/squabble-comments.html)).
 
 So, from my point of view, the decision was easy. My
 [blog](http://shkreza.github.io) was up in no time, and I added my [personal
 domain](http://blog.shkreza.com) as well. All that is left is to keep up with
 publishing regularly -- which I fully plan to do `:)`.
-
-I will also explore publishing on [Medium](http://www.medium.com), which would
-be the added icing on the cake.
 
 -- shkreza
 
