@@ -2,7 +2,7 @@
 title: "Building - First Blog (#1)"
 layout: post
 theme: default
-tag: building, blogs
+category: building
 ---
 I want to start this first blog with the topic that is closest to my heart -
 *building things*. It's both the joy and desire to create something new, and
