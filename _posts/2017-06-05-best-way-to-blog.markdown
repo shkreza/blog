@@ -47,3 +47,4 @@ publishing regularly -- which I fully plan to do `:)`.
 -- shkreza
 
 {% include disclaimer.html %}
+{% include google-analytics.html %}
