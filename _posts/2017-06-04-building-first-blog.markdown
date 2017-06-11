@@ -22,3 +22,4 @@ all, that is also what I love most ;)
 -- shkreza
 
 {% include disclaimer.html %}
+{% include google-analytics.html %}
