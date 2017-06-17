@@ -14,3 +14,6 @@ yielded substantial
 -- shkreza
 
 {% include disclaimer.html %}
+{% if jekyll.environment == "production" %}
+  {% include google-analytics.html %}
+{% endif %}

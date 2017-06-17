@@ -100,3 +100,10 @@ making the error surface a circular bowl.
 # Learning data size
   1. Mini batch learning: make sure data is random and each batch has
   representative set of data.
+
+-- shkreza
+
+{% include disclaimer.html %}
+{% if jekyll.environment == "production" %}
+  {% include google-analytics.html %}
+{% endif %}
