@@ -4,11 +4,28 @@ layout: post
 theme: default
 category: building
 ---
+I have been interested in neural network learning for quite some time now. The history of these networks are vast and span many decades of (mainly) academic research. With the sharp increase in ll past research
+
 # Network architecture
-  1. Problem with small gradients in too deep networks
+  1. **Feedforward neworks:** Problem with small gradients in too deep networks
   2. Error function - squared error vs. cross-entropy (logistic function
           plateuing at -1 & 1 or softmax unit making it difficult to train due
           to too small gradient using squared error)
+  3. **Convolutional networks:** 
+  4. **Echo state networks:**
+  5. **Boltzmann machines and restricted Boltzmann machines:**
+  6. **-**
+
+# Optimization technique
+  1. **Gradient decent optimizers:**
+  2. **Hessian free optimizers:**
+  3. **-**
+
+# Error functions
+  1. **Cross-entropy**
+  2. **Maximum likelihood:** The derivative of the probability function is
+     zero.
+  3. **Square root of squared error:**
 
 # Initializing the weights
   1. Start with random weights - otherwise they will all change together
@@ -48,13 +65,37 @@ making the error surface a circular bowl.
   down-scaling them (i.e., divide) by square root of their eigenvalues.
 
 # Overfitting
-  1. Restrict the parameters - weight sharing (such as how )
-  2. Dropout
+  1. **Restrict number of parameters and hidden layers:** weight sharing:
+  2. **Dropout:**
   3. Using validation dataset to monitor changes in error rate - if error
-  increases, we are starting to overfit. Also, initial training of networks may
-  push the network to produce output proportional to the population in the
-  input data. It takes longer for network to improve beyond this guessing and
-  actually learn things.
+     increases, we are starting to overfit. Also, initial training of networks
+     may push the network to produce output proportional to the population in
+     the input data. It takes longer for network to improve beyond this
+     guessing and actually learn things.
+  4. Averaging different models 
+  5. **More training data:** Increasing the amount of training data while
+     keeping the network size, helps avoid the network from fitting the data
+     perfectly. Of course, if data volume is vastly high, a bigger network is
+     needed to properly generalize the larger data set.
+  6. **Baysian models:** - average prediction by many models
+     model parameters have a probability distribution which gets updated by
+     seeind data.
+
+  7. **Early stopping:** Start with small weights and stop learning before
+     overfitting, i.e., use training data, validation data and test data.
+     Rotation of validation sets is also a good technique on random inputs.when
+     error rate on validation set grows.
+  8. **Weight decay:** Penalize the network by a function (normally square) of
+     the weights - this penalty is added to the error function and pulls the
+     weights towards zero unless big error derivaties counter act this decay.
+  9. **Weight constraints:** Restrict the squared length of incoming weight
+     vector to any given node to a maximum.
+  10. **Adding noise to weights, inputs or hidden activities:** we can treat
+      activities of neural as stochastic (i.e., a neuron is activated by the
+              probably equal to its logistic output). In the backward pass, we
+      use the real value of the activation values to compute the derivatives.
+  11. **Model averaging:** Averaging different models helps lower bias and
+      variance of error. 
 
 # Learning data size
   1. Mini batch learning: make sure data is random and each batch has
